@@ -142,12 +142,15 @@
     height: min(100%, 760px);
     display: flex;
     flex-direction: column;
+    align-items: stretch;
+    text-align: left;
     position: relative;
     transition: transform 0.25s cubic-bezier(.3, 1.5, .5, 1);
     filter: drop-shadow(0 6px 6px rgba(31, 49, 64, 0.18));
   }
   .box:focus-visible { outline: 4px solid var(--ink); outline-offset: 6px; border-radius: 12px; }
   .box.hover { transform: translateY(-8px); }
+  .box > span { width: 100%; }
 
   .lid {
     position: relative;
